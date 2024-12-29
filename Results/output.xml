@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.6 on win32)" generated="2024-12-28T22:10:44.919862" rpa="false" schemaversion="5">
+<suite id="s1" name="Front-Office" source="C:\development\robot-scripts\scriptingChallenge\tests\front-office.robot">
+<test id="s1-t1" name="Should be able to open the &quot;Front-Office webpage&quot;" line="14">
+<kw name="Begin Web Test" owner="Common" type="SETUP">
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-12-28T22:10:45.387961" elapsed="0.000533"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-28T22:10:45.389023" level="INFO">starting the test case</msg>
+<arg>starting the test case</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-28T22:10:45.388494" elapsed="0.000529"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-28T22:10:45.389539" level="INFO">Opening browser 'chrome' to base url 'https://automationplayground.com/front-office/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-28T22:10:45.389023" elapsed="6.550872"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-12-28T22:10:51.939895" elapsed="0.088228"/>
+</kw>
+<status status="PASS" start="2024-12-28T22:10:45.387444" elapsed="6.641214"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-28T22:10:52.029706" level="INFO">Executing test1</msg>
+<arg>Executing test1</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-28T22:10:52.029165" elapsed="0.000541"/>
+</kw>
+<kw name="Verify the Home Page" owner="FrontOfficeApp">
+<kw name="Verify the page loaded" owner="Home">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-12-28T22:10:52.031717" level="INFO">Opening url 'https://automationplayground.com/front-office/'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-12-28T22:10:52.031717" elapsed="0.063140"/>
+</kw>
+<status status="PASS" start="2024-12-28T22:10:52.030719" elapsed="0.064807"/>
+</kw>
+<status status="PASS" start="2024-12-28T22:10:52.029706" elapsed="0.065820"/>
+</kw>
+<kw name="End Web Test" owner="Common" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-12-28T22:10:52.097292" elapsed="2.266935"/>
+</kw>
+<status status="PASS" start="2024-12-28T22:10:52.096137" elapsed="2.268090"/>
+</kw>
+<status status="PASS" start="2024-12-28T22:10:45.382870" elapsed="8.984347"/>
+</test>
+<test id="s1-t2" name="Should be able to click on the &quot;Team Link&quot;" line="18">
+<kw name="Begin Web Test" owner="Common" type="SETUP">
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-12-28T22:10:54.375074" elapsed="0.000998"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-12-28T22:10:54.383469" level="INFO">starting the test case</msg>
+<arg>starting the test case</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-12-28T22:10:54.382456" elapsed="0.001013"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-28T22:10:54.384810" level="INFO">Opening browser 'chrome' to base url 'https://automationplayground.com/front-office/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-28T22:10:54.383469" elapsed="15.964418"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-12-28T22:11:10.348887" elapsed="0.066636"/>
+</kw>
+<status status="PASS" start="2024-12-28T22:10:54.375074" elapsed="16.040449"/>
+</kw>
+<kw name="Click on the Team Link" owner="FrontOfficeApp">
+<kw name="Click On Team" owner="Team">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-12-28T22:11:10.426587" level="INFO">Clicking link 'Team'.</msg>
+<arg>${TEAM_LINK}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-28T22:11:10.425129" elapsed="0.108521"/>
+</kw>
+<status status="PASS" start="2024-12-28T22:11:10.425129" elapsed="0.108521"/>
+</kw>
+<status status="PASS" start="2024-12-28T22:11:10.425129" elapsed="0.109521"/>
+</kw>
+<kw name="Verify the Page Content" owner="FrontOfficeApp">
+<kw name="Verify the Page Content" owner="PageContent">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-12-28T22:11:10.562506" level="INFO">Current page contains text 'Our Amazing Team'.</msg>
+<arg>${CHECK_PAGE_CONTENT}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-12-28T22:11:10.536336" elapsed="0.027182"/>
+</kw>
+<status status="PASS" start="2024-12-28T22:11:10.536336" elapsed="0.027182"/>
+</kw>
+<status status="PASS" start="2024-12-28T22:11:10.535759" elapsed="0.027759"/>
+</kw>
+<kw name="End Web Test" owner="Common" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-12-28T22:11:10.564518" elapsed="2.252958"/>
+</kw>
+<status status="PASS" start="2024-12-28T22:11:10.563518" elapsed="2.254961"/>
+</kw>
+<status status="PASS" start="2024-12-28T22:10:54.374073" elapsed="18.444406"/>
+</test>
+<doc>This is some basic infor about test suite</doc>
+<status status="PASS" start="2024-12-28T22:10:44.921155" elapsed="27.899370"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Front-Office">Front-Office</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
